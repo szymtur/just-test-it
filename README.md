@@ -107,8 +107,7 @@ describe('Test suite description', () => {
 #### Example usage of matchers
 
 ```javascript
-import { justTestIt } from '../lib/just-test-it.js';
-const { describe, test, expect } = justTestIt;
+import { describe, test, expect } from '../lib/just-test-it.js';
 
 describe('Matchers example', () => {
     test('toBe matcher', () => {
