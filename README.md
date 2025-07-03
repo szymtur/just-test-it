@@ -1,8 +1,8 @@
 # JustTestIt Framework
 
-`JustTestIt` is a lightweight and simple unit testing framework for JavaScript, designed to make writing and running tests easy. It provides clear logging of test results and supports basic assertions such as `toBe`, `toBeTruthy`, and `toNotThrow`. It’s perfect for projects where you don’t need the overhead of large, complex testing frameworks.
+`JustTestIt` is a lightweight JavaScript unit testing framework designed to make writing and running tests simple and straightforward. It provides clear logging of test results and supports basic assertions such as `toBe`, `toBeTruthy`, `toNotThrow` and others. It’s perfect for projects where you don’t need the overhead of large, complex testing frameworks.
 
-`JustTestIt` allows you to manage your tests and organize them into `test suites` Additionally, it supports a debug mode that provides detailed information about errors.
+`JustTestIt` allows managing and organizing tests into `test suites`. Additionally, it supports a debug mode that provides detailed information about errors.
 
 ***
 
@@ -15,11 +15,11 @@
 - `just-test-it-runner.js`
 
 
-Test files should be placed directly in the `tests` directory. Currently, JustTestIt does not support subfolders, so all test files need to be located directly within the `tests` directory.  
+All test files must be placed directly in the `tests` directory because the `JustTestIt` framework does not currently support subfolders.  
 
 #### File naming and extensions
 
-Test files should use the `.test.js` extension. The test runner will only recognize and execute files with this specific naming convention. For example, a test file should be named `example.test.js`.
+Test files must have the `.test.js` extension. The test runner will only recognize and execute files with this exact naming convention. For example, a test file should be named `example.test.js`.
 
 
 #### Directory Structure
@@ -68,18 +68,17 @@ In the `package.json` file add the following scripts to allow easy test executio
 
 `JustTestIt` provides several basic functions for creating and organizing tests into test suites:
 
-- `describe()` – Used to organize tests into logical groups, such as a group of tests for a specific feature or functionality.
+- `describe()` – used to organize tests into logical groups, such as a group of tests for a specific feature or functionality.
 
-- `test()` – Defines a single test within a test suite. This function is used to execute a test.
+- `test()` – defines a single test within a test suite. This function is used to execute a test.
 
-- `expect()` – Used for making assertions. It compares values, checks truthiness, etc.
+- `expect()` – used for making assertions. It compares values, checks truthiness, etc.
 
 
 #### Example usage:
 
 ```javascript
-import { justTestIt } from '../lib/just-test-it.js';
-const { describe, test, expect } = justTestIt;
+import { describe, test, expect } from '../lib/just-test-it.js';
 
 describe('Test suite description', () => {
     test('Test 1', () => {
@@ -140,7 +139,7 @@ describe('Matchers example', () => {
 
 ### Running Tests
 
-Tests are executed with the test runner. The following commands run all tests
+Tests are executed with the test runner. The following commands run all tests.
 
 ```bash
 npm test
@@ -166,4 +165,4 @@ node tests/example.test.js --debug
 
 #### Test summary
 
-After running the tests, the results will be displayed in the terminal, and a summary will appear at the end showing the number of passed and failed tests, as well as the execution time.
+After running the tests, the results are displayed in the terminal, including a summary of passed and failed tests and the total execution time.
