@@ -72,7 +72,7 @@ In the `package.json` file add the following scripts to allow easy test executio
 
 - `test()` – defines a single test within a test suite. This function is used to execute a test.
 
-- `expect()` – used for making assertions. It compares values, checks truthiness, etc.
+- `expect()` – used for making assertions. It compares values, checks truthiness and mmore.
 
 
 #### Example usage:
