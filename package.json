@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "node lib/just-test-it-runner.js",
+    "test:debug": "node lib/just-test-it-runner.js --debug"
+  }
+}
